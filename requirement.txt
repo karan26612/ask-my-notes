@@ -1,8 +1,0 @@
---extra-index-url https://download.pytorch.org/whl/cpu
-torch
-sentence-transformers
-chromadb
-pypdf
-google-genai
-streamlit
-python-dotenv
