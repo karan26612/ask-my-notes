@@ -6,6 +6,8 @@ Upload documents, ask a question in plain English, and get an answer grounded in
 
 [**Live demo**](YOUR_STREAMLIT_APP_URL) · [Report an issue](YOUR_GITHUB_REPO_URL/issues)
 
+> **No API key or sign-up needed to try it.** Open the demo, upload a PDF, and ask a question. The key is configured on the server.
+
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B?logo=streamlit&logoColor=white)
 ![ChromaDB](https://img.shields.io/badge/Vector%20DB-ChromaDB-6C47FF)
@@ -81,12 +83,14 @@ python eval.py            # retrieval hit rate by chunk size
 python eval_refusal.py    # out-of-scope refusal test
 ```
 
-## Getting started
+## Run your own copy (for developers)
+
+Using the live demo requires nothing. The steps below are only for running or deploying your own copy of the project, where the app owner supplies a Gemini key on the server. Visitors are never asked for a key.
 
 ### Prerequisites
 
 - Python 3.10 or newer
-- A [Google AI Studio](https://aistudio.google.com/) API key
+- A [Google AI Studio](https://aistudio.google.com/) API key (for the person hosting the app, not for its users)
 
 ### Installation
 
@@ -98,9 +102,9 @@ venv\Scripts\activate          # macOS/Linux: source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Configuration
+### Server configuration
 
-Create a `.env` file in the project root:
+The app reads the key from the server environment, so the interface never asks users for one. For local development, create a `.env` file in the project root:
 
 ```
 GEMINI_API_KEY=your-key-here

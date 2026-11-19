@@ -7,6 +7,10 @@ from store import get_collection, add_chunks
 from rag import ask
 
 st.set_page_config(page_title="Ask My Notes", page_icon="📚")
+from rag import get_api_key
+if not get_api_key():
+    st.error("This demo isn't configured yet (server API key missing). Please try again later.")
+    st.stop()
 st.title("📚 Ask My Notes")
 st.caption("Upload PDFs and ask questions answered from them, with page citations.")
 
