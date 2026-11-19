@@ -13,10 +13,14 @@ Upload documents, ask a question in plain English, and get an answer grounded in
 ![ChromaDB](https://img.shields.io/badge/Vector%20DB-ChromaDB-6C47FF)
 ![Gemini](https://img.shields.io/badge/LLM-Google%20Gemini-4285F4?logo=google&logoColor=white)
 
-<!-- Replace with a screenshot or GIF of the app. Make sure no API key is visible. -->
-![Ask My Notes screenshot](docs/screenshot.png)
+## Demo video
+
+[![Watch the demo](https://img.youtube.com/vi/GOUzdJBebRA/hqdefault.jpg)](https://youtu.be/GOUzdJBebRA)
 
 ---
+
+---
+
 
 ## Features
 
