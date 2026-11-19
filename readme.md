@@ -4,7 +4,7 @@
 
 Upload documents, ask a question in plain English, and get an answer grounded in your files. The model is instructed to answer only from the retrieved passages, so when the answer isn't in your documents it says so instead of guessing.
 
-[**Live demo**](YOUR_STREAMLIT_APP_URL) · [Report an issue](YOUR_GITHUB_REPO_URL/issues)
+[**Live demo**](https://ask-my-note.streamlit.app/) · [Report an issue](https://github.com/karan26612/ask-my-notes/issues)
 
 > **No API key or sign-up needed to try it.** Open the demo, upload a PDF, and ask a question. The key is configured on the server.
 
@@ -103,6 +103,7 @@ pip install -r requirements.txt
 ```
 
 ### Server configuration
+
 
 The app reads the key from the server environment, so the interface never asks users for one. For local development, create a `.env` file in the project root:
 
